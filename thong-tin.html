@@ -1,15 +1,76 @@
-<style>
-    body { background: linear-gradient(to right, #ff9a9e, #fad0c4); font-family: sans-serif; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-    .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
-    h2 { color: #ff6b6b; border-bottom: 2px solid #ff9a9e; padding-bottom: 10px; }
-    p { margin: 15px 0; font-size: 17px; color: #444; }
-    .back-btn { display: inline-block; margin-top: 20px; text-decoration: none; color: #ff6b6b; font-weight: bold; }
-</style>
-<div class="card">
-    <h2>🌸 Giới thiệu bản thân</h2>
-    <p><b>Họ và tên:</b> Nguyễn Thị Hà Linh</p>
-    <p><b>Ngày sinh:</b> 14/8/2008</p>
-    <p><b>Quê quán:</b> Hải Dương (Hải Phòng)</p>
-    <p><b>Hiện tại:</b> Quảng Ninh - THPT Hòn Gai</p>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin của Linh</title>
+    <style>
+        body { 
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; padding: 20px; color: #444;
+        }
+        .container { 
+            max-width: 600px; margin: auto; background: white; 
+            border-radius: 30px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .avatar { 
+            width: 150px; height: 150px; border-radius: 50%; 
+            border: 5px solid #ff9a9e; object-fit: cover;
+            margin-bottom: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h2 { color: #ff6b6b; margin-bottom: 25px; font-size: 28px; }
+        .info-grid { text-align: left; background: #fff5f5; padding: 20px; border-radius: 20px; margin-bottom: 20px; }
+        .info-item { margin: 10px 0; font-size: 16px; border-bottom: 1px solid #ffebeb; padding-bottom: 8px; }
+        .info-item b { color: #ff6b6b; width: 120px; display: inline-block; }
+        
+        .image-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .img-box { border-radius: 15px; overflow: hidden; border: 2px solid #ff9a9e; }
+        .img-box img { width: 100%; height: 150px; object-fit: cover; transition: 0.3s; }
+        .img-box img:hover { transform: scale(1.1); }
+        .img-label { font-size: 12px; background: #ff9a9e; color: white; padding: 5px; font-weight: bold; }
+
+        .back-btn { 
+            display: inline-block; margin-top: 25px; text-decoration: none; 
+            background: #ff6b6b; color: white; padding: 12px 30px; 
+            border-radius: 50px; font-weight: bold; transition: 0.3s;
+        }
+        .back-btn:hover { background: #ee5253; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://files.catbox.moe/0nu5y2.jpg" class="avatar" alt="Hà Linh">
+    
+    <h2>🌸 Giới Thiệu Bản Thân</h2>
+
+    <div class="info-grid">
+        <div class="info-item"><b>Họ và tên:</b> Nguyễn Thị Hà Linh</div>
+        <div class="info-item"><b>Ngày sinh:</b> 14/8/2008</div>
+        <div class="info-item"><b>Quê quán:</b> Hải Dương (nay thuộc Hải Phòng)</div>
+        <div class="info-item"><b>Nơi ở:</b> Quảng Ninh</div>
+        <div class="info-item"><b>Trường:</b> THPT Hòn Gai 🏫</div>
+    </div>
+
+    <div class="image-gallery">
+        <div class="img-box">
+            <img src="https://uploads.onecompiler.io/448pxpyp7/448r6mmr8/Ban-do-cac-huyen-Hai-Duong-moi-nhat.jpg">
+            <div class="img-label">Quê hương Hải Dương</div>
+        </div>
+        <div class="img-box">
+            <img src="https://uploads.onecompiler.io/448pxpyp7/448r6mmr8/images1471135_ban_do_tinh_quang_ninh_full_size.jpg">
+            <div class="img-label">Nơi sống Quảng Ninh</div>
+        </div>
+        <div style="grid-column: span 2;" class="img-box">
+            <img src="https://uploads.onecompiler.io/448pxpyp7/448r6mmr8/Truong-Hon-Gai.jpg" style="height: 200px;">
+            <div class="img-label">Trường THPT Hòn Gai</div>
+        </div>
+    </div>
+
     <a href="index.html" class="back-btn">← Quay lại Menu</a>
 </div>
+
+</body>
+</html>
