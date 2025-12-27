@@ -7,34 +7,74 @@
     <style>
         body { 
             background: #e0c3fc; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            padding: 20px; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; padding: 20px;
+            display: flex; justify-content: center; align-items: center; 
             min-height: 100vh; 
-            margin: 0; 
         }
         .box { 
             background: white; 
-            padding: 40px; 
+            padding: 30px; 
             border-radius: 30px; 
-            border: 4px dashed #8e44ad; 
-            max-width: 600px; /* Tăng chiều rộng tối đa */
-            width: 90%; /* Đảm bảo hiển thị tốt trên điện thoại */
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* Thêm đổ bóng cho xịn */
+            border: 5px dashed #8e44ad; 
+            width: 100%;
+            max-width: 500px; /* Khống chế độ rộng vừa phải để không bị loãng */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h2 { color: #8e44ad; font-size: 30px; margin-bottom: 25px; }
+        
+        /* Phần sửa lỗi chữ nhảy lung tung */
+        .content-list {
             text-align: left;
+            display: block; /* Bỏ flex ở đây để chữ không bị chia cột */
+            margin: 0 auto;
         }
-        h2 { 
-            text-align: center; 
+        .item { 
+            margin: 20px 0; 
+            font-size: 19px; 
+            line-height: 1.5; 
+            color: #333;
+            padding-left: 40px;
+            position: relative;
+        }
+        .item::before { 
+            content: "👉"; 
+            position: absolute; 
+            left: 0; 
+        }
+        .thudai { 
+            color: #e74c3c; 
+            font-weight: bold; 
+            text-decoration: underline; 
+            font-size: 21px; 
+        }
+        .back-link { 
+            display: inline-block; 
+            margin-top: 30px; 
+            text-decoration: none; 
             color: #8e44ad; 
-            font-size: 32px; /* Chữ tiêu đề to hơn */
-            margin-top: 0;
+            font-weight: bold; 
+            font-size: 18px;
+            border: 2px solid #8e44ad;
+            padding: 10px 25px;
+            border-radius: 50px;
         }
-        ul { 
-            list-style: none; 
-            padding: 0; 
-        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>🌱 Tính cách "độc lạ"</h2>
+        <div class="content-list">
+            <div class="item">Vui vẻ, hòa đồng (nhưng phải thân đã mới hiện nguyên hình 🙂).</div>
+            <div class="item">Ít nói với người lạ, hay trêu <b>bạn Duyên</b> với người thân.</div>
+            <div class="item">Não cá vàng chuyện vặt, nhưng cực kỳ <span class="thudai">THÙ DAI</span> chuyện lớn.</div>
+            <div class="item">Hơi lười, nhất là lúc... buồn ngủ 😴</div>
+        </div>
+        <a href="index.html" class="back-link">← Quay về trang chủ</a>
+    </div>
+</body>
+</html>        }
         li { 
             margin: 20px 0; 
             font-size: 20px; /* Tăng cỡ chữ nội dung */
