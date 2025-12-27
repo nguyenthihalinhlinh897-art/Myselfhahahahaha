@@ -1,16 +1,82 @@
-<style>
-    body { background: #e0c3fc; font-family: sans-serif; padding: 20px; text-align: center; }
-    .box { background: white; padding: 25px; border-radius: 20px; border: 3px dashed #8e44ad; display: inline-block; text-align: left; max-width: 400px; }
-    li { margin: 12px 0; font-size: 16px; color: #555; }
-    .thudai { color: #e74c3c; font-weight: bold; text-decoration: underline; }
-</style>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính cách của Linh</title>
+    <style>
+        body { 
+            background: #e0c3fc; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            padding: 20px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        .box { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 30px; 
+            border: 4px dashed #8e44ad; 
+            max-width: 600px; /* Tăng chiều rộng tối đa */
+            width: 90%; /* Đảm bảo hiển thị tốt trên điện thoại */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* Thêm đổ bóng cho xịn */
+            text-align: left;
+        }
+        h2 { 
+            text-align: center; 
+            color: #8e44ad; 
+            font-size: 32px; /* Chữ tiêu đề to hơn */
+            margin-top: 0;
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 20px 0; 
+            font-size: 20px; /* Tăng cỡ chữ nội dung */
+            line-height: 1.6;
+            color: #444;
+            display: flex;
+            align-items: flex-start;
+        }
+        li::before {
+            content: "👉";
+            margin-right: 15px;
+        }
+        .thudai { 
+            color: #e74c3c; 
+            font-weight: bold; 
+            text-decoration: underline; 
+            font-size: 22px; 
+        }
+        .back-link { 
+            display: block; 
+            text-align: center; 
+            margin-top: 30px; 
+            text-decoration: none; 
+            color: #8e44ad; 
+            font-weight: bold; 
+            font-size: 18px;
+        }
+        .back-link:hover { transform: scale(1.1); transition: 0.3s; }
+    </style>
+</head>
+<body>
+
 <div class="box">
     <h2>🌱 Tính cách "độc lạ"</h2>
     <ul>
-        <li>Vui vẻ, hòa đồng (nhưng phải thân đã 🙂).</li>
+        <li>Vui vẻ, hòa đồng (nhưng phải thân đã mới hiện nguyên hình 🙂).</li>
         <li>Ít nói với người lạ, hay trêu <b>bạn Duyên</b> với người thân.</li>
         <li>Não cá vàng chuyện vặt, nhưng cực kỳ <span class="thudai">THÙ DAI</span> chuyện lớn.</li>
         <li>Hơi lười, nhất là lúc... buồn ngủ 😴</li>
     </ul>
-    <a href="index.html" style="text-decoration: none; color: #8e44ad; font-weight: bold;">← Quay về</a>
+    <a href="index.html" class="back-link">← Quay về trang chủ</a>
 </div>
+
+</body>
+</html>
