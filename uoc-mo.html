@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ước mơ của Linh</title>
+    <style>
+        body { 
+            /* Background là ảnh cậu gửi */
+            background: url('https://uploads.onecompiler.io/448pxpyp7/448rcfqsm/Screenshot_20251227_010436_Chrome.jpg') no- settler;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; padding: 20px; 
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh;
+        }
+        /* Lớp phủ mờ để chữ dễ đọc hơn trên nền ảnh */
+        .overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4); z-index: 1;
+        }
+        .container { 
+            position: relative; z-index: 2;
+            max-width: 600px; width: 90%; background: rgba(255, 255, 255, 0.9); 
+            border-radius: 25px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h2 { color: #d35400; font-size: 28px; margin-bottom: 20px; }
+        
+        .target {
+            background: linear-gradient(45deg, #f1c40f, #e67e22);
+            color: white; padding: 15px; border-radius: 15px;
+            font-size: 24px; font-weight: bold; display: inline-block;
+            margin-bottom: 25px; box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+        }
+
+        .dream-list { text-align: left; margin: 20px 0; line-height: 1.8; color: #333; }
+        .dream-list li { margin-bottom: 15px; list-style: none; position: relative; padding-left: 25px; }
+        .dream-list li::before { content: "✨"; position: absolute; left: 0; }
+
+        .image-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .img-card { border-radius: 15px; overflow: hidden; border: 3px solid white; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+        .img-card img { width: 100%; height: 150px; object-fit: cover; transition: 0.3s; }
+        .img-card img:hover { transform: scale(1.1); }
+        .img-card span { display: block; background: white; padding: 5px; font-size: 13px; font-weight: bold; color: #d35400; }
+
+        .back-btn { 
+            display: inline-block; margin-top: 25px; text-decoration: none; 
+            background: #d35400; color: white; padding: 12px 30px; 
+            border-radius: 50px; font-weight: bold; transition: 0.3s;
+        }
+        .back-btn:hover { background: #e67e22; transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+    <h2>🌟 Ước Mơ & Hoài Bão</h2>
+    
+    <div class="target">🎯 Mục tiêu: 27 điểm THPTQG</div>
+
+    <ul class="dream-list">
+        <li>Học tại trường TOP ở Hà Nội, đặc biệt là <b>Đại học Bách Khoa</b>.</li>
+        <li>Đi xuyên Việt ít nhất một lần để khám phá đất nước.</li>
+        <li>Có một cuộc sống đủ đầy, tự do làm điều mình thích.</li>
+    </ul>
+
+    <div class="image-row">
+        <div class="img-card">
+            <img src="https://uploads.onecompiler.io/448pxpyp7/448rcfqsm/a1040374-9b63-4c63-850e-1fcb8d0b0a97.png">
+            <span>Hà Nội mộng mơ</span>
+        </div>
+        <div class="img-card">
+            <img src="https://uploads.onecompiler.io/448pxpyp7/448rcfqsm/bk-1755856140169844190839.jpg">
+            <span>Bách Khoa Hà Nội</span>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">← Quay lại Menu</a>
+</div>
+
+</body>
+          </html>
